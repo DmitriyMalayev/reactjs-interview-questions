@@ -8,7 +8,6 @@
     
     React was created by [Jordan Walke](https://github.com/jordwalke), a software engineer working for Facebook. React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.
 
-    **[⬆ Back to Top](#table-of-contents)**
 
 2. ### What is the history behind React evolution?
     The history of ReactJS started in 2010 with the creation of **XHP**. XHP is a PHP extension which improved the syntax of the language such that XML document fragments become valid PHP expressions and the primary purpose was used to create custom and reusable HTML elements. 
@@ -19,7 +18,6 @@
 
     **Note:** JSX comes from the idea of XHP
 
-    **[⬆ Back to Top](#table-of-contents)**
     
 3.  ### What are the major features of React?
 
@@ -31,7 +29,6 @@
     - Follows **Unidirectional or one-way** data flow or data binding.
     - Uses **reusable/composable** UI components to develop the view.
 
-    **[⬆ Back to Top](#table-of-contents)**
 
 4.  ### What is JSX?
 
@@ -78,7 +75,7 @@
 
     **Note:** JSX is stricter than HTML
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 5.  ### What is the difference between Element and Component?
 
@@ -130,7 +127,7 @@
       );
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 6.  ### How to create components in React?
 
@@ -154,7 +151,7 @@
        }
        ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 7.  ### When to use a Class Component over a Function Component?
 
@@ -193,7 +190,7 @@
     </ErrorBoundary>
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 8.  ### What are Pure Components?
 
@@ -241,7 +238,7 @@
 
     **Note:** `React.memo()` is a higher-order component.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 9.  ### What is state in React?
 
@@ -296,7 +293,7 @@
 
     State is similar to props, but it is private and fully controlled by the component ,i.e., it is not accessible to any other component till the owner component decides to pass it.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 10.  ### What are props in React?
 
@@ -401,7 +398,7 @@
 
     On the otherhand, `props` (short for "properties") are passed to a component by its parent component and are `read-only`, meaning that they cannot be modified by the own component itself. Also, props can be used to configure the behavior of a component and to pass data between components. The components become reusable with the usage of props.
     
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 12. ### What is the difference between HTML and React event handling?
 
@@ -440,7 +437,7 @@
     3. In HTML, you need to invoke the function by appending `()`
        Whereas in react you should not append `()` with the function name. (refer "activateLasers" function in the first point for example)
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 13. ### What are synthetic events in React?
 
@@ -463,7 +460,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 14. ### What are inline conditional expressions?
 
@@ -480,7 +477,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 15. ### What is "key" prop and what is the benefit of using it in arrays of elements?
 
@@ -508,13 +505,13 @@
     4. The key attribute accepts either string or number and internally convert it as string type.
     5. Don't generate the key on the fly something like `key={Math.random()}`. Because the keys will never match up between re-renders  and DOM created everytime.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 16. ### What is Virtual DOM?
 
     The _Virtual DOM_ (VDOM) is an in-memory representation of _Real DOM_. The representation of a UI is kept in memory and synced with the "real" DOM. It's a step that happens between the render function being called and the displaying of elements on the screen. This entire process is called _reconciliation_.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 17. ### How Virtual DOM works?
 
@@ -532,19 +529,19 @@
 
        ![vdom3](images/vdom3.png)
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 18. ### What is the difference between Shadow DOM and Virtual DOM?
 
     The _Shadow DOM_ is a browser technology designed primarily for scoping variables and CSS in _web components_. The _Virtual DOM_ is a concept implemented by libraries in JavaScript on top of browser APIs.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 19. ### What is React Fiber?
 
     Fiber is the new _reconciliation_ engine or reimplementation of core algorithm in React v16. The goal of React Fiber is to increase its suitability for areas like animation, layout, gestures, ability to pause, abort, or reuse work and assign priority to different types of updates; and new concurrency primitives.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 20. ### What is the main goal of React Fiber?
 
@@ -560,7 +557,7 @@
     4. Ability to return multiple elements from render().
     5. Better support for error boundaries.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 21. ### What are controlled components?
 
@@ -596,7 +593,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 22. ### What are uncontrolled components?
 
@@ -665,19 +662,19 @@
     </p>
     </details>
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 23. ### What is the difference between createElement and cloneElement?
 
     JSX elements will be transpiled to `React.createElement()` functions to create React elements which are going to be used for the object representation of UI. Whereas `cloneElement` is used to clone an element and pass it new props.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 24. ### What is Lifting State Up in React?
 
     When several components need to share the same changing data then it is recommended to _lift the shared state up_ to their closest common ancestor. That means if two child components share the same data from its parent, then move the state to parent instead of maintaining local state in both of the child components.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 25. ### What are Higher-Order Components?
 
@@ -696,7 +693,7 @@
     3. State abstraction and manipulation.
     4. Props manipulation.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 26. ### What is children prop?
 
@@ -746,7 +743,7 @@
 
     **Note:**  There are several methods available in the legacy React API to work with this prop. These include `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only`, `React.Children.toArray`.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 27. ### How to write comments in React?
 
@@ -771,7 +768,7 @@
     </div>
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 28. ### What is reconciliation?
 
@@ -779,7 +776,7 @@
     React stores a copy of Browser DOM which is called `Virtual DOM`. When we make changes or add data, React creates a new Virtual DOM and compares it with the previous one. This comparison is done by `Diffing Algorithm`.
     Now React compares the Virtual DOM with Real DOM. It finds out the changed nodes and updates only the changed nodes in Real DOM leaving the rest nodes as it is. This process is called _Reconciliation_.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 29. ### Does the lazy function support named exports?
 
@@ -806,7 +803,7 @@
     const SomeComponent = lazy(() => import("./IntermediateComponent.js"));
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 30. ### Why React uses `className` over `class` attribute?
 
@@ -818,7 +815,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 31. ### What are fragments?
 
@@ -866,7 +863,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 32. ### Why fragments are better than container divs?
 
@@ -876,7 +873,7 @@
     2. Some CSS mechanisms like _Flexbox_ and _CSS Grid_ have a special parent-child relationships, and adding divs in the middle makes it hard to keep the desired layout.
     3. The DOM Inspector is less cluttered.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 33. ### What are portals in React?
 
@@ -889,13 +886,13 @@
 
     The first argument is any render-able React child, such as an element, string, or fragment. The second argument is a DOM element.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 34. ### What are stateless components?
 
     If the behaviour of a component is independent of its state then it can be a stateless component. You can use either a function or a class for creating stateless components. But unless you need to use a lifecycle hook in your components, you should go for function components. There are a lot of benefits if you decide to use function components here; they are easy to write, understand, and test, a little faster, and you can avoid the `this` keyword altogether.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 35. ### What are stateful components?
 
@@ -947,7 +944,7 @@
     </details>
 
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 36. ### How to apply validation on props in React?
 
@@ -1012,7 +1009,7 @@
     };
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 37. ### What are the advantages of React?
 
@@ -1024,7 +1021,7 @@
     4. Easy to integrate with frameworks (Angular, Backbone) since it is only a view library.
     5. Easy to write unit and integration tests with tools such as Jest.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 38. ### What are the limitations of React?
 
@@ -1036,13 +1033,13 @@
     4. The code complexity increases with inline templating and JSX.
     5. Too many smaller components leading to over engineering or boilerplate.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 39. ### What are the recommended ways for static type checking?
 
     Normally we use _PropTypes library_ (`React.PropTypes` moved to a `prop-types` package since React v15.5) for _type checking_ in the React applications. For large code bases, it is recommended to use _static type checkers_ such as Flow or TypeScript, that perform type checking at compile time and provide auto-completion features.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 40. ### What is the use of `react-dom` package?
 
@@ -1054,7 +1051,7 @@
     4. `findDOMNode()`
     5. `createPortal()`
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 41. ### What is ReactDOMServer?
 
@@ -1081,7 +1078,7 @@
     });
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 42. ### How to use innerHTML in React?
 
@@ -1099,7 +1096,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 43. ### How to use styles in React?
 
@@ -1118,8 +1115,6 @@
 
     Style keys are camelCased in order to be consistent with accessing the properties on DOM nodes in JavaScript (e.g. `node.style.backgroundImage`).
 
-    **[⬆ Back to Top](#table-of-contents)**
-
 44. ### How events are different in React?
 
     Handling events in React elements has some syntactic differences:
@@ -1127,7 +1122,6 @@
     1. React event handlers are named using camelCase, rather than lowercase.
     2. With JSX you pass a function as the event handler, rather than a string.
 
-    **[⬆ Back to Top](#table-of-contents)**
 
 45. ### What is the impact of indexes as keys?
 
@@ -1150,7 +1144,6 @@
     ```
     **Note:** If you don't specify `key` prop at all, React will use index as a key's value while iterating over an array of data.
 
-    **[⬆ Back to Top](#table-of-contents)**
 
 46. ### How do you conditionally render components?
 
@@ -1176,7 +1169,7 @@
     );
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 47. ### Why we need to be careful when spreading props on DOM elements?
 
@@ -1194,7 +1187,7 @@
     );
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 48. ### How do you memoize a component?
 
@@ -1226,7 +1219,7 @@
     export default React.memo(MyFunctionComponent);
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 49. ### How you implement Server Side Rendering or SSR?
 
@@ -1241,19 +1234,19 @@
 
     This method will output the regular HTML as a string, which can be then placed inside a page body as part of the server response. On the client side, React detects the pre-rendered content and seamlessly picks up where it left off.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 50. ### How to enable production mode in React?
 
     You should use Webpack's `DefinePlugin` method to set `NODE_ENV` to `production`, by which it strip out things like propType validation and extra warnings. Apart from this, if you minify the code, for example, Uglify's dead-code elimination to strip out development only code and comments, it will drastically reduce the size of your bundle.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 51. ### Do Hooks replace render props and higher order components?
 
     Both render props and higher-order components render only a single child but in most of the cases Hooks are a simpler way to serve this by reducing nesting in your tree.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 52. ### What is a switching component?
 
@@ -1286,7 +1279,7 @@
     };
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 53. ### What are React Mixins?
 
@@ -1305,7 +1298,7 @@
 
      <!-- TODO: mixins are deprecated -->
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 54. ### What are the Pointer Events supported in React?
 
@@ -1324,7 +1317,7 @@
     9. `onPointerOver`
     10. `onPointerOut`
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 55. ### Why should component names start with capital letter?
 
@@ -1354,7 +1347,7 @@
     import MyComponent from "./myComponent";
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 56. ### Are custom DOM attributes supported in React v16?
 
@@ -1379,8 +1372,6 @@
     ```
 
     This is useful for supplying browser-specific non-standard attributes, trying new DOM APIs, and integrating with opinionated third-party libraries.
-
-    **[⬆ Back to Top](#table-of-contents)**
 
 57. ### How to loop inside JSX?
 
@@ -1408,7 +1399,7 @@
 
     This is because JSX tags are transpiled into _function calls_, and you can't use statements inside expressions. This may change thanks to `do` expressions which are _stage 1 proposal_.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 58. ### How do you access props in attribute quotes?
 
@@ -1430,7 +1421,7 @@
     <img className="image" src={`images/${this.props.image}`} />
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 59. ### What is React proptype array with shape?
 
@@ -1447,7 +1438,7 @@
     };
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 60. ### How to conditionally apply class attributes?
 
@@ -1469,13 +1460,13 @@
     <div className={`btn-panel ${this.props.visible ? 'show' : 'hidden'}`}>
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 61. ### What is the difference between React and ReactDOM?
 
     The `react` package contains `React.createElement()`, `React.Component`, `React.Children`, and other helpers related to elements and component classes. You can think of these as the isomorphic or universal helpers that you need to build components. The `react-dom` package contains `ReactDOM.render()`, and in `react-dom/server` we have _server-side rendering_ support with `ReactDOMServer.renderToString()` and `ReactDOMServer.renderToStaticMarkup()`.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 62. ### Why ReactDOM is separated from React?
 
@@ -1483,7 +1474,7 @@
 
     To build more environments that React can render to, React team planned to split the main React package into two: `react` and `react-dom`. This paves the way to writing components that can be shared between the web version of React and React Native.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 63. ### How to use React label element?
 
@@ -1501,7 +1492,7 @@
     <input type={'text'} id={'user'} />
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 64. ### How to combine multiple inline style objects?
 
@@ -1521,7 +1512,7 @@
     </button>
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 65.  ### How to re-render the view when the browser is resized?
 
@@ -1767,7 +1758,7 @@
         }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 74. ### Is it possible to use async/await in plain React?
 
@@ -4014,7 +4005,7 @@
      const [user, setUser] = useState("userProfile");
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+ 
 
 221. ### What are the sources used for introducing hooks?
 
@@ -4180,7 +4171,7 @@
      3. IDEs such as VS Code was made for TypeScript
      4. Avoid bugs with the ease of readability and Validation
 
-     **[⬆ Back to Top](#table-of-contents)**
+ 
 
 236. ### How do you make sure that user remains authenticated on page refresh while using Context API State Management?
      When a user logs in and reload, to persist the state generally we add the load user action in the useEffect hooks in the main App.js. While using Redux, loadUser action can be easily accessed.
@@ -4540,7 +4531,7 @@
       
       **Note:** Frameworks such as NextJS has this flag enabled by default.
 
-      **[⬆ Back to Top](#table-of-contents)**
+  
 
 246. ### What is the benefit of strict mode?
 
@@ -4998,7 +4989,7 @@
 
     **Note:** You can directly assign to the state object either in _constructor_ or using latest javascript's class field declaration syntax.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 2. ### What is the purpose of callback function as an argument of `setState()`?
 
@@ -5012,7 +5003,7 @@
     );
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 3. ### How to bind methods or event handlers in JSX callbacks?
 
@@ -5060,7 +5051,7 @@
 
     **Note:** If the callback is passed as prop to child components, those components might do an extra re-rendering. In those cases, it is preferred to go with `.bind()` or _public class fields syntax_ approach considering performance.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 4. ### How to pass a parameter to an event handler or callback?
 
@@ -5085,13 +5076,13 @@
     };
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 5. ### What is the use of refs?
 
     The _ref_ is used to return a reference to the element. They _should be avoided_ in most cases, however, they can be useful when you need a direct access to the DOM element or an instance of a component.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 6. ### How to create refs?
 
@@ -5140,7 +5131,7 @@
     You can also use _refs_ in function components using **closures**.
     **Note**: You can also use inline ref callbacks even though it is not a recommended approach.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 7. ### What are forward refs?
 
@@ -5158,7 +5149,7 @@
     <ButtonElement ref={ref}>{"Forward Ref"}</ButtonElement>;
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 8. ### Which is preferred option with in callback refs and findDOMNode()?
 
@@ -5196,7 +5187,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 9. ### Why are String Refs legacy?
 
@@ -5225,7 +5216,7 @@
        }
        ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 10. ### What are the different phases of component lifecycle?
 
@@ -5253,7 +5244,7 @@
 
     ![phases 16.2](images/phases.png)
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 11. ### What are the lifecycle methods of React?
 
@@ -5276,7 +5267,7 @@
     - **componentDidUpdate:** Mostly it is used to update the DOM in response to prop or state changes. This will not fire if `shouldComponentUpdate()` returns `false`.
     - **componentWillUnmount** It will be used to cancel any outgoing network requests, or remove all event listeners associated with the component.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 12. ### How to create props proxy for HOC component?
 
@@ -5299,7 +5290,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 13. ### What is context?
 
@@ -5311,7 +5302,7 @@
     const { Provider, Consumer } = React.createContext(defaultValue);
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 14. ### What is the purpose of using super constructor with props argument?
 
@@ -5351,7 +5342,7 @@
 
     The above code snippets reveals that `this.props` is different only within the constructor. It would be the same outside the constructor.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 15. ### How to set state with a dynamic key name?
 
@@ -5363,7 +5354,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 16. ### What would be the common mistake of function being called every time the component renders?
 
@@ -5385,7 +5376,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 17. ### What are error boundaries in React v16?
 
@@ -5428,13 +5419,13 @@
     </ErrorBoundary>
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 18. ### How are error boundaries handled in React v15?
 
     React v15 provided very basic support for _error boundaries_ using `unstable_handleError` method. It has been renamed to `componentDidCatch` in React v16.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 19. ### What is the purpose of render method of `react-dom`?
 
@@ -5446,13 +5437,13 @@
 
     If the optional callback is provided, it will be executed after the component is rendered or updated.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 20. ### What will happen if you use `setState()` in constructor?
 
     When you use `setState()`, then apart from assigning to the object state React also re-renders the component and all its children. You would get error like this: _Can only update a mounted or mounting component._ So we need to use `this.state` to initialize variables inside constructor.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 21. ### Is it good to use `setState()` in `componentWillMount()` method?
 
@@ -5469,7 +5460,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 22. ### What will happen if you use props in initial state?
 
@@ -5512,7 +5503,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 23. ### How you use decorators in React?
 
@@ -5544,7 +5535,7 @@
 
     **Note:** Decorators are a feature that didn't make it into ES7, but are currently a _stage 2 proposal_.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 24. ### What is CRA and its benefits?
 
@@ -5575,7 +5566,7 @@
     5. A live development server that warns about common mistakes.
     6. A build script to bundle JS, CSS, and images for production, with hashes and sourcemaps.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 25. ### What is the lifecycle methods order in mounting?
 
@@ -5586,7 +5577,7 @@
     3. `render()`
     4. `componentDidMount()`
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 26. ### What are the lifecycle methods going to be deprecated in React v16?
 
@@ -5598,7 +5589,7 @@
 
     Starting with React v16.3 these methods are aliased with `UNSAFE_` prefix, and the unprefixed version will be removed in React v17.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 27. ### What is the purpose of `getDerivedStateFromProps()` lifecycle method?
 
@@ -5614,7 +5605,7 @@
 
     This lifecycle method along with `componentDidUpdate()` covers all the use cases of `componentWillReceiveProps()`.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 28. ### What is the purpose of `getSnapshotBeforeUpdate()` lifecycle method?
 
@@ -5630,7 +5621,7 @@
 
     This lifecycle method along with `componentDidUpdate()` covers all the use cases of `componentWillUpdate()`.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 29. ### What is the recommended way for naming components?
 
@@ -5662,7 +5653,7 @@
     export default TodoApp;
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 30. ### What is the recommended ordering of methods in component class?
 
@@ -5683,7 +5674,7 @@
     13. optional render methods like `renderNavigation()` or `renderProfilePicture()`
     14. `render()`
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 31. ### Why we need to pass a function to setState()?
 
@@ -5732,7 +5723,7 @@
     }));
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 32. ### Why is `isMounted()` an anti-pattern and what is the proper solution?
 
@@ -5748,7 +5739,7 @@
 
     An optimal solution would be to find places where `setState()` might be called after a component has unmounted, and fix them. Such situations most commonly occur due to callbacks, when a component is waiting for some data and gets unmounted before the data arrives. Ideally, any callbacks should be canceled in `componentWillUnmount()`, prior to unmounting.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 33. ### What is the difference between constructor and getInitialState?
 
@@ -5781,7 +5772,7 @@
 
     **Note:** `React.createClass()` is deprecated and removed in React v16. Use plain JavaScript classes instead.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 34. ### Can you force a component to re-render without calling setState?
 
@@ -5793,7 +5784,7 @@
 
     It is recommended to avoid all uses of `forceUpdate()` and only read from `this.props` and `this.state` in `render()`.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 35. ### What is the difference between `super()` and `super(props)` in React using ES6 classes?
 
@@ -5823,7 +5814,7 @@
 
     Outside `constructor()` both will display same value for `this.props`.
 
-    **[⬆ Back to Top](#table-of-contents)**
+
 
 36. ### What is the difference between `setState()` and `replaceState()` methods?
 
@@ -7041,8 +7032,7 @@
      ```js
      npx create-react-app my-app --template redux-typescript
      ```
-     
-  **[⬆ Back to Top](#table-of-contents)**
+
 
 89. ### What is state mutation and how to prevent it?
 
